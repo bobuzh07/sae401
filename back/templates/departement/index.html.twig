@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des départements{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <h1>📊 Données de la SAE 401</h1>
+    <p>Voici les départements importés depuis ton fichier JSON :</p>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Nom du Département</th>
+                <th>Région</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for dept in liste_departements %}
+                <tr>
+                    <td>{{ dept.codeDepartement }}</td>
+                    <td>{{ dept.nomDepartement }}</td>
+                    <td>{{ dept.region.nomRegion }}</td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="3">Aucune donnée trouvée. As-tu lancé les fixtures ?</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 40px;
+}
+
+.large {
+  grid-column: span 2;
+}
+
+.card {
+  background-color: #1f1f1f;
+  border-radius: 20px;
+  height: 300px;
+  width: 100%;
+}
+
+br{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 500px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+select {
+  background-color: #1f1f1f;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+option {
+  margin-top: 20px;
+  border-radius: 5px;
+}
