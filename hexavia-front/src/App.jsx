@@ -21,7 +21,7 @@ function App() {
       })
       .catch(err => console.error("Erreur fetch stats :", err));
   }, []);
-
+  
   return (
     <>
       <Header />

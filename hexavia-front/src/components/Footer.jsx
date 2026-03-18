@@ -13,12 +13,6 @@ export default function Footer() {
           <p>Mentions légales</p>
           <p>Cookies</p>
         </div>
-
-        <div>
-          <h4>Links</h4>
-          <p>Facebook</p>
-          <p>Instagram</p>
-        </div>
       </div>
     </footer>
   );
