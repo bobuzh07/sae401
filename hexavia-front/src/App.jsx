@@ -32,14 +32,6 @@ function App() {
         <Route path="/page3" element={<Page3 />} />
         <Route path="/page4" element={<Page4 />} />
       </Routes>
-      <div>
-        <p>Statistiques de chômage par ville</p>
-        {stats.map((stat, index) => (
-          <p key={index}>
-            {stat.city} : {stat.unemployment_rate}%
-          </p>
-        ))}
-      </div>
       <Footer />
     </>
   );

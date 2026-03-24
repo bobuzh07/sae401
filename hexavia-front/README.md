@@ -1,16 +1,26 @@
-# React + Vite
+1. Configuration du Back-End (Symfony)
+- Lancé xamp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Commandes terminal :
+- composer install
 
-Currently, two official plugins are available:
+php bin/console doctrine:database:create
+php bin/console doctrine:migrations:migrate
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Lancement du serveur :
+-symfony serve
 
-## React Compiler
+2. Configuration du Front
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Commandes terminal :
+- cd hexavia-front
+- npm install
+- npm run dev
 
-## Expanding the ESLint configuration
+3. Importation des données (Base de données)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Lancez XAMPP (Apache & MySQL)
+- Allez sur phpMyAdmin
+- Créez une nouvelle base de données (nommée sae401)
+- Cliquez sur l'onglet Importer
+- Choisissez le fichier situé dans : `/database/backup_db.sql`

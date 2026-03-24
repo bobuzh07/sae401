@@ -1,9 +1,19 @@
-import { Link } from "react-router-dom";
+import React from "react";
 
-export default function Card({ to }) {
+
+export default function Card({ children }) {
   return (
-    <Link to={to} style={{ textDecoration: "none" }}>
-      <div className="card"></div>
-    </Link>
+    <div className="card" style={{ 
+      height: "100%", 
+      display: "flex", 
+      flexDirection: "column",
+      overflow: "hidden", 
+      position: "relative",
+    }}>
+      {/* Conteneur interne pour le graphique */}
+      <div style={{ flex: 1, width: "100%", position: "relative" }}>
+        {children}
+      </div>
+    </div>
   );
 }
