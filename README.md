@@ -4,9 +4,6 @@
 Commandes terminal :
 - composer install
 
-php bin/console doctrine:database:create
-php bin/console doctrine:migrations:migrate
-
 Lancement du serveur :
 -symfony serve
 
